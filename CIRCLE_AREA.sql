@@ -1,0 +1,11 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+    AREA NUMBER;
+    RADIUS NUMBER:= 5;
+    PI CONSTANT NUMBER := 3.14;
+BEGIN 
+    AREA := PI * RADIUS * RADIUS;
+    DBMS_OUTPUT.PUT_LINE('The area of the circle: ' || AREA);
+END;
+/
